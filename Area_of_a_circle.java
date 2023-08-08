@@ -1,12 +1,12 @@
 import java.util.Scanner;
-public class cir{
+public class div{
     public static void main(String[] args)
     {
         Scanner sc=new Scanner(System.in);
-        int r;
-        double x;
-        r=sc.nextInt();
-        x=(float)(3.14*r*r);
-        System.out.printf("%.2f",x);
+        int a;
+        double b;
+        a=sc.nextInt();
+        b=3.14*a*a;
+        System.out.printf("%.2f",b);
     }
 }
