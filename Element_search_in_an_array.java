@@ -16,7 +16,8 @@ public class s{
             if(x==a[i])
             {
                 f=1;
-            }    
+                break;
+            }
         }
         if(f==1)
         {
@@ -25,6 +26,6 @@ public class s{
         else
         {
             System.out.printf("False");
-            }
+        }
     }
 }
