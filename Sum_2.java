@@ -1,4 +1,4 @@
-import java.util.Scanner;
+import java.util.*;
 public class s{
     public static void main(String[] args)
     {
@@ -8,17 +8,13 @@ public class s{
         int x=sc.nextInt();
         int y=sc.nextInt();
         int s=0;
-        if(a<b)
+        for(int i=a;i<=b;i++)
         {
-            for(int i=a;i<=b;i++)
+            if(i%x==0 && i%y!=0)
             {
-                if(i%x==0 && i%y!=0)
-                {
-                    s+=i;
-                }
+                s+=i;
             }
-            System.out.printf("%d",s);
         }
-        
-}
+        System.out.printf("%d",s);
+    }
 }
