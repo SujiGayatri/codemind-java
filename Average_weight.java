@@ -1,13 +1,12 @@
-import java.util.Scanner;
-public class average{
+import java.util.*;
+public class s{
     public static void main(String[] args)
     {
         Scanner sc=new Scanner(System.in);
-        int x,a,b,c;
-        x=sc.nextInt();
-        a=sc.nextInt();
-        b=sc.nextInt();
-        c=x*3-a-b;
+        int x=sc.nextInt();
+        int a=sc.nextInt();
+        int b=sc.nextInt();
+        int c=3*x-a-b;
         System.out.printf("%d",c);
     }
 }
