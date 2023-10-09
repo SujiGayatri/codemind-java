@@ -1,19 +1,21 @@
-import java.util.Scanner;
+import java.util.*;
 public class s{
     public static void main(String[] args)
     {
         Scanner sc=new Scanner(System.in);
-        int a=sc.nextInt();
-        int b=sc.nextInt();
-        int c=sc.nextInt();
-        int d=b*c;
-        if(a%d==0)
+        int n=sc.nextInt();
+        int k=sc.nextInt();
+        int m=sc.nextInt();
+        int y=k*m;
+        int x=n/y;
+        int z=x+1;
+        if(n%y==0)
         {
-            System.out.printf("%d",(a/d));
+            System.out.printf("%d",x);
         }
         else
         {
-            System.out.printf("%d",(a/d)+1);
+            System.out.printf("%d",z);
         }
     }
 }
