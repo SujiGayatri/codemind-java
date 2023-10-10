@@ -1,15 +1,13 @@
-import java.util.Scanner;
-public class climb
-{
+import java.util.*;
+public class s{
     public static void main(String[] args)
     {
         Scanner sc=new Scanner(System.in);
-        int a,b,c,d;
-        a=sc.nextInt();
-        b=sc.nextInt();
-        c=sc.nextInt();
-        d=sc.nextInt();
-        if(a>=10 && b>=10 && c>=10 && d>=10)
+        int x1=sc.nextInt();
+        int x2=sc.nextInt();
+        int x3=sc.nextInt();
+        int x4=sc.nextInt();
+        if(x1>=10 && x2>=10 && x3>=10 && x4>=10)
         {
             System.out.printf("YES");
         }
@@ -17,5 +15,6 @@ public class climb
         {
             System.out.printf("NO");
         }
+        
     }
 }
