@@ -1,16 +1,13 @@
-import java.util.Scanner;
-public class avrg
-{
+import java.util.*;
+public class s{
     public static void main(String[] args)
     {
         Scanner sc=new Scanner(System.in);
-        int a,b,c,d;
-        double x;
-        a=sc.nextInt();
-        b=sc.nextInt();
-        c=sc.nextInt();
-        d=sc.nextInt();
-        x=Math.sqrt((c-a)*(c-a)+(d-b)*(d-b));
-        System.out.printf("%.4f",x);
+        int x1=sc.nextInt();
+        int y1=sc.nextInt();
+        int x2=sc.nextInt();
+        int y2=sc.nextInt();
+       double x=Math.sqrt((x2-x1)*(x2-x1)+(y2-y1)*(y2-y1));
+       System.out.printf("%.4f",x);
     }
 }
