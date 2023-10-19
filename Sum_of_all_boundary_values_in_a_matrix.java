@@ -1,21 +1,26 @@
-import java.util.*;
-public class s{
-    public static void main(String[] args)
+import java.util.Scanner;
+public class sam
+{
+    public static void main(String args[])
     {
-        Scanner sc=new Scanner(System.in);
-        int r=sc.nextInt();
-        int c=sc.nextInt();
-        int[][] a=new int[r][c];
-        int s=0;
-        for(int i=0;i<r;i++)
+        Scanner sc= new Scanner(System.in);
+        int m,n,a[][],i,j,s=0;
+        m=sc.nextInt();
+        n=sc.nextInt();
+        a=new int[m][n];
+        for(i=0;i<m;i++)
         {
-            for(int j=0;j<c;j++)
+            for(j=0;j<n;j++)
             {
                 a[i][j]=sc.nextInt();
-                if(i==0 || i==r-1 || j==0 || j==c-1)
-                {
-                    s+=a[i][j];
-                }
+            }
+        }
+        for(i=0;i<m;i++)
+        {
+            for(j=0;j<n;j++)
+            {
+                if(i==0 || i==(m-1) || j==0 || j==(n-1))
+                s=s+a[i][j];
             }
         }
         System.out.println(s);
