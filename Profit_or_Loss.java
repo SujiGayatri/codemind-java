@@ -1,22 +1,21 @@
-import java.util.Scanner;
+import java.util.*;
 public class s{
     public static void main(String[] args)
     {
         Scanner sc=new Scanner(System.in);
-        int cp,sp;
-        cp=sc.nextInt();
-        sp=sc.nextInt();
-        if(cp>sp)
-        {
-            System.out.printf("Loss");
-        }
-        else if(cp<sp)
+        int n=sc.nextInt();
+        int m=sc.nextInt();
+        if(n<m)
         {
             System.out.printf("Profit");
         }
+        else if(n==m)
+        {
+            System.out.printf("No Profit and No Loss");
+        }
         else
         {
-            System.out.printf("No profit and No loss");
+            System.out.printf("Loss");
         }
     }
 }
