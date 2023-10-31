@@ -1,22 +1,22 @@
-import java.util.Scanner;
+import java.util.*;
 public class s{
-    public static void main(String[] args){
-        Scanner sc=new Scanner(System.in);
-        int a,b,c;
-        a=sc.nextInt();
-        b=sc.nextInt();
-        c=sc.nextInt();
-        if(a==b && b==c)
+    public static void main(String[] args)
+    {
+        Scanner s=new Scanner(System.in);
+        int a=s.nextInt();
+        int b=s.nextInt();
+        int c=s.nextInt();
+        if(a==b && b==c && c==a)
         {
             System.out.printf("Equilateral triangle");
         }
-        else if(a==b || b==c || a==c)
+        else if(a==b || b==c || c==a)
         {
             System.out.printf("Isosceles triangle");
         }
-        else 
+        else
         {
             System.out.printf("Scalene triangle");
         }
-    } 
+    }
 }
