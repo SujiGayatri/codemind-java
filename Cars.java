@@ -1,17 +1,28 @@
 import java.util.*;
-public class s{
-    public static void main(String[] args)
+public class Solution
+{
+    public static void main(String args[])
     {
         Scanner sc=new Scanner(System.in);
-        int n=sc.nextInt();
-        int x=n/4;
-        if(n%4==0)
+        int a=sc.nextInt();
+        int b=sc.nextInt();
+        Float c=sc.nextFloat();
+        if(a>b)
         {
-            System.out.printf("%d",x);
+            System.out.println(-1);
         }
         else
         {
-            System.out.printf("%d",x+1);
+            int cou=1;
+            int s1=a,s2=b;
+            while(c+s1>=s2)
+            {
+                cou++;
+                s1+=a;
+                s2+=b;
+            }
+           System.out.print(cou);
         }
+         
     }
 }
