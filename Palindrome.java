@@ -1,24 +1,23 @@
-import java.util.Scanner;
-public class c{
-    public static void main(String[] args)
+import java.util.*;
+public class s{
+    public static void main(String args[])
     {
         Scanner sc=new Scanner(System.in);
-        int n,t,s=0,r;
-        n=sc.nextInt();
-        t=n;
-        while(t!=0)
+        int n=sc.nextInt();
+        int rev=0;
+        int temp=n;
+        while(n!=0)
         {
-            r=t%10;
-            s=s*10+r;
-            t=t/10;
+            rev=rev*10+n%10;
+            n=n/10;
         }
-        if(n==s)
+        if(temp==rev)
         {
-            System.out.printf("Palindrome");
+            System.out.println("True");
         }
         else
         {
-            System.out.printf("Not Palindrome");
+        System.out.println("False");
         }
     }
 }
