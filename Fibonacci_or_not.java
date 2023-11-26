@@ -1,27 +1,27 @@
-import  java.util.Scanner;
-public class sample
+import java.util.*;
+public class sum
 {
     public static void main(String args[])
     {
         Scanner sc=new Scanner(System.in);
-        int n,a=0,b=1,c,found=0;
+        int n,a=0,b=1,c;
         n=sc.nextInt();
-        c=a+b;
-        while(c<=n)
+        for(int i=1;;i++)
         {
-            if(c==n)
+            c=a+b;
+            if (c==n)
             {
-                found=1;
+                System.out.println("True");
                 break;
             }
-            c=a+b;
+            else if (c>n)
+            {
+                System.out.println("False");
+                break;
+            }
             a=b;
             b=c;
         }
-        if(found==1)
-        System.out.println("True");
-        else
-         System.out.println("False");
-        sc.close();
+        
     }
 }
